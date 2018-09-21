@@ -14,10 +14,12 @@ namespace test {
 
 // Store in *dst a random string of length "len" and return a Slice that
 // references the generated data.
+// 随机字符串
 extern Slice RandomString(Random* rnd, int len, std::string* dst);
 
 // Return a random key with the specified length that may contain interesting
 // characters (e.g. \x00, \xff, etc.).
+// 随机key
 extern std::string RandomKey(Random* rnd, int len);
 
 // Store in *dst a string of length "len" that will compress to
@@ -29,7 +31,9 @@ extern Slice CompressibleString(Random* rnd, double compressed_fraction,
 // A wrapper that allows injection of errors.
 class ErrorEnv : public EnvWrapper {
  public:
+  // 写失败数
   bool writable_file_error_;
+  
   int num_writable_file_errors_;
 
   ErrorEnv() : EnvWrapper(Env::Default()),

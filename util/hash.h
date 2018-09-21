@@ -10,6 +10,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
+// hash函数
 namespace leveldb {
 
 extern uint32_t Hash(const char* data, size_t n, uint32_t seed);

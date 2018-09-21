@@ -21,6 +21,7 @@ class Histogram {
   std::string ToString() const;
 
  private:
+  // 最小值、最大值、数目、总和、平方和
   double min_;
   double max_;
   double num_;

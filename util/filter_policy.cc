@@ -6,6 +6,7 @@
 
 namespace leveldb {
 
+// 空的析构函数
 FilterPolicy::~FilterPolicy() { }
 
 }  // namespace leveldb
