@@ -12,6 +12,7 @@
 #endif
 
 // Define C99 equivalent types.
+// 通用类型
 typedef signed char           int8_t;
 typedef signed short          int16_t;
 typedef signed int            int32_t;
